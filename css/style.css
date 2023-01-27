@@ -17,13 +17,13 @@ a{
 
 /* Container */
 .container{
-  width: 935px;
+  width: 800px;
   display: grid;
-  margin: 0 auto 80px;
-  grid-template-columns: 380px 350px;
-  column-gap: 32px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 350px;
+  column-gap: 28px;
   margin-top: 80px;
-  padding-bottom: 32px;
+  margin-bottom: 100px;
 }
 
 
@@ -50,10 +50,9 @@ a{
   border: 1px solid #dbdbdb ;
   padding: 1.25rem 2.5rem;
   margin-bottom: 10px;
-
 }
 
-.form form input{
+.input-login, .input-pass{
   height: 2.25rem;
   width: 100%;
   background-color: #FAFAFA;
@@ -64,6 +63,10 @@ a{
   border-radius: 3px;
   color: #262626;
   font-size: 12px;
+}
+
+.input-pass{
+  margin-bottom: 20px;
 }
 
 .form form input:focus{
@@ -77,6 +80,22 @@ a{
   
 }
 
+.checkbox{
+  margin:0 5px 0 -90px;
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+}
+
+.form form label{
+  color: #383838;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+
+  
+}
+
 .form form button{
   appearance: none;
   height: 30px;
@@ -86,7 +105,7 @@ a{
   font-weight: bold;
   border-radius: 8px;
   border: none;
-  margin-top: 8px;
+  margin-top: 20px;
 }
 .form form button:hover{
   background-color: #1877F2;
@@ -168,6 +187,8 @@ a{
 .microsoft-store img{
   width: 110px;
 }
+
+/* Footer */
 
 .footer{
   width: 1100px;
